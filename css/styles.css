@@ -1,0 +1,769 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+ul{
+    list-style-type: none;
+}
+input {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+/* portatble */
+@media (max-width:1050px) {
+    .about,.competence,.services,.projets,.team,.clients,.services_ordi,.carte,.footer{
+        display: none;
+    }
+    .menu_ordi {
+        display: none;
+    }
+    header {
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0.5px 1px 10px 5px rgb(230, 230, 230);
+
+    }
+    .menu_tel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        width: 100%;
+    }
+    .logo_tel {
+        height: 100%;
+        width: 30%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+    }
+    #logo_tel1 {
+        font-size: 1.3rem;
+        
+        color: purple;
+        font-weight: bolder;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .navbar {
+        padding-right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height: 100%;
+        width: 30%;
+        background-color: white;
+    }
+    .acceuil {
+        width: 100%;
+        height: 900px;
+        background-color: rgb(255, 208, 0);
+        padding-top: 50px;
+
+    }
+    .mrflr {
+        height: 200px;
+        width: 60%;
+    }
+    .acceui_ordi {
+        display: none;
+    }
+    .acceui_tel {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+    }
+    .acceui_tel .text{
+        /* padding-left: 50px;
+        padding-top: 50px; */
+        height: 50%;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+
+    }
+    #download {
+        padding: 15px 25px;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(56, 6, 102);
+        
+    }
+    .image {
+        
+        height: 50%;
+        width: 100%;
+        background-color: rgb(247, 247, 247);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+}
+
+/* ordi */
+@media (min-width:1050px) {
+    
+    header {
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        background-color: white;
+        box-shadow: 0.5px 1px 10px 5px rgb(230, 230, 230);
+    }
+    .menu_tel {
+        display: none;
+    }
+    .menu_ordi {
+        height: 70px;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_ordi ul{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .menu_ordi ul a{
+       padding: 20px 15px;
+       margin-left: 1px;
+       background-color: white;
+    }
+    #logo{
+       padding: 18px 25px;
+       margin-left: 1px;
+       font-size: 2rem;
+       background-color: rgb(255, 208, 0);
+       color: purple;
+       font-weight: bolder;
+       font-family: Arial, Helvetica, sans-serif;
+    }
+    .acceuil {
+        width: 100%;
+        height: 700px;
+        background-color: rgb(255, 208, 0);
+        padding-top: 70px;
+    }
+    .acceui_ordi {
+        display: flex;
+        width: 100%;
+        height: 100%;
+
+    }
+    .acceui_tel {
+        display: none;
+    }
+    .acceui_ordi1 {
+        
+        width: 50%;
+        height: 100%;
+        background-color: rgb(241, 237, 237);
+    }
+    .acceui_ordi1_2 {
+        padding-left: 70px;
+        padding-top: 100px;
+    }
+    .acceui_ordi2 {
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        background-color: rgb(241, 237, 237);
+    }
+    #download {
+        padding: 15px 25px;
+        border-radius: 8px;
+        color: white;
+        background-color: rgb(56, 6, 102);
+        
+    }
+    .uyjzd {
+        height: 200px;
+        width: 100%;
+    }
+    .about {
+        height: 700px;
+        width: 100%;
+    }
+    .about_tel {
+        display: none;
+    }
+    .about_ordi {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding-left: 70px;
+        padding-right: 50px;
+    }
+    .texabout {
+        background-color: white;
+        height: 100%;
+        width: 50%;
+        
+    }
+    .texer {
+        background-color: white;
+        height: 50%;
+        width: 100%;
+        display: flex;
+    }
+    .ter {
+        background-color: white;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+    #a {
+        padding-right: 20px;
+    }
+    .ter2 {
+        background-color: white;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        
+    }
+    .texer2 {
+        background-color: white;
+        height: 50%;
+        width: 100%;
+    }
+    .imgabout {
+        background-color: rgb(69, 94, 94);
+        height: 100%;
+        width: 50%;
+    }
+    .deuxim {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        gap: 10px;
+    }
+    .em1 {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+    .crr1 {
+        height: 250px;
+        width: 250px;
+        background: url(../image/experience2.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+    }
+    .crre {
+        height: 250px;
+        width: 250px;
+        background: url(../image/experience1.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+
+    }
+    .em2 {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    .deuxim2 {
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        
+        display: flex;
+    }
+    .kzcd1 {
+        height: 100%;
+        width: 10%;
+        background-color: white;
+        
+    }
+    .kzcd {
+        height: 100%;
+        width: 90%;
+        background-color: white;
+        
+    }
+    .competence {
+        width: 100%;
+        height: 700px;
+    }
+    .competence_ordi {
+        padding-top: 100px;
+        width: 100%;
+        height: 700px;
+        display: flex;
+        background-color: white;
+    }
+    .aze1 {
+        width: 50%;
+        height: 700px;
+        background-color: white;
+    }
+    .aze2 {
+        padding-left: 30px;
+        width: 50%;
+        height: 700px;
+        background-color: white;
+    }
+    /* .aze1 {
+        width: 100%;
+        height: 700px;
+    } */
+    .care {
+        height: 300px;
+        width: 100%;
+        background-color: aquamarine;
+        display: flex;
+    }
+    .care .te1{
+        height: 300px;
+        width: 50%;
+        background-color: white;
+    }
+    .care .te2{
+        padding-left: 10px;
+        height: 300px;
+        width: 50%;
+        background-color: white;
+    }
+    .tetd1{
+        height: 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+    }
+    .tetd2{
+        height: 5px;
+        width: 100%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(13, 139, 40);
+        margin-bottom: 10px;
+    }
+    /* .dfsjk{
+        height: 5px;
+        width: 80%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(75, 146, 90);
+    }
+    .dfsjk1{
+        height: 5px;
+        width: 20%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    } */
+    .dfsjk2{
+        height: 5px;
+        width: 80%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(121, 146, 75);
+    }
+    .dfsjk21{
+        height: 5px;
+        width: 20%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    }
+    .dfsjk3{
+        height: 5px;
+        width: 50%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(121, 146, 75);
+    }
+    .dfsjk31{
+        height: 5px;
+        width: 50%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    }
+    .dfsjk4{
+        height: 5px;
+        width: 90%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(121, 146, 75);
+    }
+    .dfsjk41{
+        height: 5px;
+        width: 10%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    }
+    .dfsjk5{
+        height: 5px;
+        width: 60%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(75, 141, 146);
+    }
+    .dfsjk51{
+        height: 5px;
+        width: 40%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    }
+    .dfsjk6{
+        height: 5px;
+        width: 75%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(146, 130, 75);
+    }
+    .dfsjk61{
+        height: 5px;
+        width: 25%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+    }
+    .dfsjk7{
+        height: 5px;
+        width: 65%;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(13, 255, 223);
+    }
+    .dfsjk71{
+        height: 5px;
+        width: 38%;
+        border-radius: 0px 50px 50px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(230, 230, 230);
+        
+    }
+    .bouton {
+        width: 95%;
+        height: 70px;
+        background-color: white;
+        display: flex;
+        border: 2px solid rgb(71, 7, 131);
+        border-radius: 5px;
+
+    }
+    .bou1 {
+        width: 50%;
+        height: 100%;
+        background-color: rgb(71, 7, 131);
+        border-radius: 5px;
+    }
+    .bou2 {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+    .services {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.527);
+       
+    }
+    .services_ordi {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgba(224, 224, 224, 0.527);
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+        padding-top: 100px;
+    }
+    .sfdg3 {
+        
+        width: 50%;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        height:100px;
+    }
+    .sfdg2 {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+        width: 50%;
+        max-width: 600px;
+        height:100px;
+      
+    }
+    .sfdg {
+        margin-top: 20px;
+        width: 50%;
+        max-width: 600px;
+        background-color: white;
+        height:250px;
+        display: flex;
+        
+    }
+    .lodk1 {
+        width: 20%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lodk2 {
+        width: 80%;
+        height: 100%;
+        background-color: white;
+    }
+    .services_ordi12 {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 50px;
+        height: 200px;
+        width: 100%;
+        background-color: rgba(184, 64, 64, 0.527);
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+    }
+    .projets {
+        width: 100%;
+        background-color: white;
+    }
+    .projets_ordi {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: white;
+        gap: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .projets_ordi .sfdg {
+        margin-top: 20px;
+        width: 50%;
+        max-width: 400px;
+        background-color: rgb(179, 90, 90);
+        height:400px;
+        border-radius: 10px;
+    }
+    .projets_ordi12 {
+        padding-left: 70px;
+        padding-right: 70px;
+
+        height: 200px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .clients {
+        height: 400px;
+        width: 100%;
+        background-color: rgb(253, 252, 252);
+        margin-top: 70px;
+        display: flex;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .precli1 {
+        width: 20%;
+        height: 100%;
+    }
+    .precli2 {
+        width: 60%;
+        height: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        background-color: rgb(253, 252, 252);
+    }
+    .precli3 {
+        width: 20%;
+        height: 100%;
+    }
+    .poie {
+        height: 50px;
+        width: 50px;
+        background: url(/image/membre1.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        border: 2px solid yellow;
+        margin: 0 auto;
+        
+    }
+    .poi {
+        height: 50px;
+        width: 50px;
+        background: url(/image/membre1.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        border: 2px solid yellow;
+        margin-top: 100px;
+        margin-left:120px;
+    }
+    .poi2 {
+        height: 40px;
+        width: 40px;
+        background: url(/image/membre3.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        border: 2px solid yellow;
+        margin-top: 40px;
+        margin-left:30px;
+    }
+    .poi3 {
+        height: 30px;
+        width: 30px;
+        background: url(/image/membre2.jpg) 50% no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        border: 2px solid yellow;
+        margin-top: 100px;
+        margin-left:180px;
+    }
+    .contact {
+        height: 500px;
+        width: 100%;
+        background-color: white;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .comptese {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .bom1 {
+        height: 50px;
+        width: 50px;
+        background-color: blueviolet;
+        border-radius: 10px;
+    }
+    .contact_pc {
+        height: 100%;
+        width: 100%;
+        background-color: white;
+       
+        display: flex;
+    }
+    .contactinfo {
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        padding-right: 50px;
+    }
+    .contactinfo2 {
+        height: 100%;
+        width: 50%;
+        background-color: white;
+        
+    }
+    .impu {
+        
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: white;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .impu input {
+        width: 50%;
+        border-radius: 10px;
+        border: 1px solid gainsboro;
+        padding-left: 20px;
+    }
+    input {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid gainsboro;
+        padding-left: 20px;
+    }
+    .carte {
+        height: 400px;
+        width: 90%;
+        background-color: green;
+    }
+    .footer {
+        width: 100%;
+        height: 100px;
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
