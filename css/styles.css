@@ -84,16 +84,12 @@ a {
         padding-top: 50px;
 
     }
-    .mrflr {
-        height: 400px;
-        padding-top: 150px;
-        width: 70%;
-        background: url(/image/bg-header.png) 50% no-repeat;
-        background-size: cover;
-    }
+    
     .acceui_ordi {
         display: none;
     }
+
+    /* acceuil telephone */
     .acceui_tel {
         display: flex;
         flex-direction: column;
@@ -102,12 +98,18 @@ a {
         background-color: rgb(247, 247, 247);
     }
     .acceui_tel .text{
-        /* padding-left: 50px;
-        padding-top: 50px; */
+        
         height: 35%;
         width: 100%;
         background-color: white;
 
+    }
+    .nom_personne {
+        height: 400px;
+        padding-top: 150px;
+        width: 70%;
+        background: url(/image/bg-header.png) 50% no-repeat;
+        background-size: cover;
     }
     #download {
         padding: 15px 25px;
@@ -125,6 +127,10 @@ a {
         align-items: end;
         justify-content: center;
     }
+
+    /* fin acceuil tele */
+
+    /* about tele */
     .about_tel {
         display: flex;
         height: 1500px;
@@ -165,7 +171,7 @@ a {
         margin-bottom: 50px;
        
     }
-    .imeae {
+    .div_repeter {
         width: 100%;
         padding-left: 10px;
         background-color: white;
@@ -195,7 +201,7 @@ a {
     /* .projets_ordi {
         padding-top: 100px;
     }
-    .projets .sfdg2{
+    .projets .services_ord2{
         padding: 30px;
         
     } */
@@ -227,24 +233,7 @@ a {
         background-color: rgb(13, 139, 40);
         margin-bottom: 10px;
     }
-    /* .dfsjk{
-        height: 5px;
-        width: 80%;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(75, 146, 90);
-    }
-    .dfsjk1{
-        height: 5px;
-        width: 20%;
-        border-radius: 0px 50px 50px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-color: rgb(230, 230, 230);
-    } */
+    
     .dfsjk2{
         height: 5px;
         width: 80%;
@@ -354,6 +343,11 @@ a {
         background-color: rgb(230, 230, 230);
         
     }
+
+    /* fin about tele  */
+
+
+    /* fin services_ordi */
     .services_ordi5 {
         width: 100%;
         display: flex;
@@ -368,7 +362,7 @@ a {
         padding-bottom: 100px;
         padding-top: 300px;
     }
-    .sfdg {
+    .services_ord {
         width: 95%;
         padding-left: 20px;
         background-color: white;
@@ -377,26 +371,26 @@ a {
     .contactinfo {
         padding: 30px;
     }
-    #contactez .sfdg2{
+    #contactez .services_ord2{
         padding: 30px;
 
     }
-    #contactez .sfdg3{
+    #contactez .services_ord3{
         padding-bottom: 30px;
         padding-left: 30px;
 
     }
-    .projets_ordi .sfdg {
+    .projets_ordi .services_ord {
         margin-bottom: 20px;
      }
     .projets_ordi {
         padding-top: 100px;
     }
-    .projets .sfdg2{
+    .projets .services_ord2{
         padding: 30px;
         
     }
-    .projets .sfdg3{
+    .projets .services_ord3{
         padding-bottom: 30px;
         padding-left: 30px;
        
@@ -537,7 +531,7 @@ a {
         background-color: #6244C5;
         
     }
-    .uyjzd {
+    .effet_haut {
         height: 200px;
         width: 100%;
     }
@@ -879,19 +873,19 @@ a {
         font-size: 1.2rem;
         color: #6244C5;
     }
-    .jhk {
+    .etude {
         width: 92%;
         background-color: white;
         display: flex;
         height: 300px;
     }
-    .jhk1 {
+    .etude1 {
         width: 50%;
         background-color: white;
         padding-top: 50px;
         height: 300px;
     }
-    .jhk2 {
+    .etude2 {
         width: 50%;
         background-color: white;
         padding-top: 50px;
@@ -928,7 +922,7 @@ a {
         padding-bottom: 100px;
         padding-top: 100px;
     }
-    .sfdg3 {
+    .services_ord3 {
         
         width: 50%;
         max-width: 600px;
@@ -937,7 +931,7 @@ a {
         justify-content: end;
         height:100px;
     }
-    .sfdg2 {
+    .services_ord2 {
         display: flex;
         align-items: center;
         justify-content: start;
@@ -947,7 +941,7 @@ a {
         height:100px;
       
     }
-    .sfdg {
+    .services_ord {
         margin-top: 20px;
         width: 50%;
         max-width: 600px;
@@ -995,7 +989,7 @@ a {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .projets_ordi .sfdg {
+    .projets_ordi .services_ord {
         margin-top: 20px;
         width: 50%;
         max-width: 400px;
